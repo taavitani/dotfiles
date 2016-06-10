@@ -25,9 +25,8 @@ autoload -U compinit && compinit
 # Enable comments for interactive sessions.
 setopt interactivecomments
 
-# Bind ^# to comment current line. (Or uncomment if starting with '#').
-# TODO Works for iTerm but not for Terminal.app.
-bindkey "3" pound-insert
+# Bind Alt-; to comment current line. (Or uncomment if starting with '#').
+bindkey ";" pound-insert
 
 # Make color constants available.
 autoload -U colors && colors
