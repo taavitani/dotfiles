@@ -1,0 +1,2 @@
+COPY_ALWAYS="*"
+DOTFILES_DIRS="src/github.com/taavitani/dotfiles"
