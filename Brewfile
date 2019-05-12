@@ -12,3 +12,5 @@ brew "pstree"
 brew "curl"
 brew "tree"
 cask "alacritty"
+
+tap "homebrew/cask-versions"
