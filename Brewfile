@@ -11,6 +11,8 @@ brew "jq"
 brew "pstree"
 brew "curl"
 brew "tree"
+brew "fd"
+brew "fzf"
 cask "alacritty"
 
 tap "homebrew/cask-versions"
