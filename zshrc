@@ -35,7 +35,7 @@ autoload -U colors && colors
 setopt promptsubst
 export PS1='%{$fg_bold[green]%}%c%{$reset_color%} %# '
 
-export PATH=$HOME/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH
 
 EDITOR=$(which vim)
 VISUAL=$EDITOR
