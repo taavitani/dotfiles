@@ -40,3 +40,9 @@ export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH
 EDITOR=$(which vim)
 VISUAL=$EDITOR
 FCEDIT=$EDITOR
+
+. /usr/local/opt/fzf/shell/key-bindings.zsh
+. /usr/local/opt/fzf/shell/completion.zsh
+
+export FZF_DEFAULT_COMMAND=fd
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
