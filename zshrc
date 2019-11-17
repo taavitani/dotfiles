@@ -37,6 +37,9 @@ export PS1='%{$fg_bold[green]%}%c%{$reset_color%} %# '
 
 export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH
 
+export PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
+
+
 EDITOR=$(which vim)
 VISUAL=$EDITOR
 FCEDIT=$EDITOR

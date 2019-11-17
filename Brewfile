@@ -16,3 +16,6 @@ brew "fzf"
 cask "alacritty"
 
 tap "homebrew/cask-versions"
+
+tap "riscv/riscv"
+brew "riscv-tools"
