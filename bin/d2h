@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo 'obase=16; print '$1 | bc
+
