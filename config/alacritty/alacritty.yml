@@ -3,14 +3,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: xterm-256color
+  TERM: xterm-256color
 
 #window:
   # Window dimensions (changes require restart)
@@ -137,8 +137,10 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '0x171717'
-    foreground: '0xeaeaea'
+    background: '0x1e1e1e'
+    foreground: '0xcccccc'
+
+
 
     # Bright and dim foreground colors
     #
@@ -154,7 +156,7 @@ colors:
   # the cursor color will be the inverse of the cell color.
   cursor:
   #  text: '0x000000'
-    cursor: '0x8b8b8b'
+    cursor: '0xcccccc'
 
   # Selection colors
   #
@@ -162,44 +164,44 @@ colors:
   # background is unset, selection color will be the inverse of the cell colors.
   # If only text is unset the cell text color will remain the same.
   selection:
-    text: '0xeaeaea'
-    background: '0x314f78'
+    text: '0x1e1e1e'
+    background: '0x8b8b8b'
 
   # Normal colors
   normal:
     black:   '0x000000'
-    red:     '0x990000'
-    green:   '0x00a600'
-    yellow:  '0x999900'
-    blue:    '0x0000b2'
-    magenta: '0xb200b2'
-    cyan:    '0x00a6b2'
-    white:   '0xbfbfbf'
+    red:     '0xcd3131'
+    green:   '0x0dbc79'
+    yellow:  '0xe5e510'
+    blue:    '0x2472c8'
+    magenta: '0xbc3fbc'
+    cyan:    '0x11a8cd'
+    white:   '0xe5e5e5'
 
   # Bright colors
   bright:
     black:   '0x666666'
-    red:     '0xe50000'
-    green:   '0x00d900'
-    yellow:  '0xe5e500'
-    blue:    '0x0000ff'
-    magenta: '0xe500e5'
-    cyan:    '0x00e5e5'
+    red:     '0xf14c4c'
+    green:   '0x23d18b'
+    yellow:  '0xf5f543'
+    blue:    '0x3b8eea'
+    magenta: '0xd670d6'
+    cyan:    '0x29b8db'
     white:   '0xe5e5e5'
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  dim:
-    black:   '0x333333'
-    red:     '0xf2777a'
-    green:   '0x99cc99'
-    yellow:  '0xffcc66'
-    blue:    '0x6699cc'
-    magenta: '0xcc99cc'
-    cyan:    '0x66cccc'
-    white:   '0xdddddd'
+  #dim:
+  #  black:   '0x333333'
+  #  red:     '0xf2777a'
+  #  green:   '0x99cc99'
+  #  yellow:  '0xffcc66'
+  #  blue:    '0x6699cc'
+  #  magenta: '0xcc99cc'
+  #  cyan:    '0x66cccc'
+  #  white:   '0xdddddd'
 
   # Indexed Colors
   #
@@ -234,9 +236,9 @@ colors:
 #
 # Specifying a `duration` of `0` will disable the visual bell.
 #visual_bell:
-  animation: EaseOutExpo
-  duration: 0
-  color: '0xffffff'
+#  animation: EaseOutExpo
+#  duration: 0
+#  color: '0xffffff'
 
 # Background opacity
 #
