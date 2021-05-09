@@ -44,8 +44,8 @@ EDITOR=$(which vim)
 VISUAL=$EDITOR
 FCEDIT=$EDITOR
 
-. /usr/local/opt/fzf/shell/key-bindings.zsh
-. /usr/local/opt/fzf/shell/completion.zsh
+. $HOMEBREW_PREFIX/opt/fzf/shell/completion.zsh
+. $HOMEBREW_PREFIX/opt/fzf/shell/key-bindings.zsh
 
 export FZF_DEFAULT_COMMAND=fd
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
