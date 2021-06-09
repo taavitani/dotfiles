@@ -139,8 +139,8 @@ draw_bold_text_with_bright_colors: false
 colors:
   # Default colors
   primary:
-    background: '0x1e1e1e'
-    foreground: '0xcccccc'
+    background: '0x24292e'
+    foreground: '0xe1e4e8'
 
 
 
@@ -158,7 +158,7 @@ colors:
   # the cursor color will be the inverse of the cell color.
   cursor:
   #  text: '0x000000'
-    cursor: '0xcccccc'
+    cursor: '0xc8e1ff'
 
   # Selection colors
   #
@@ -166,8 +166,8 @@ colors:
   # background is unset, selection color will be the inverse of the cell colors.
   # If only text is unset the cell text color will remain the same.
   selection:
-    text: '0x1e1e1e'
-    background: '0x8b8b8b'
+    text: '0xe1e4e8'
+    background: '0x20676b'
 
   # Normal colors
   normal:
