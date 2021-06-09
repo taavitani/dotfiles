@@ -1,5 +1,5 @@
 # The size of the history list for a shell session.
-HISTSIZE=8192
+HISTSIZE=50000
 
 # We want shell history to persist between sessions.
 HISTFILE=~/.history
@@ -10,8 +10,17 @@ SAVEHIST=$HISTSIZE
 # Append to $HISTFILE after every command.
 setopt inc_append_history
 
-# A repeat of previous command is skipped.
+# Repeat duplicate commands get skipped.
 setopt hist_ignore_dups
+
+# Duplicates get expired first
+setopt hist_expire_dups_first
+
+# Using ! doesn't immediately execute selected command
+setopt hist_verify
+
+# Record timestamp in history
+setopt extended_history
 
 # Remove '/'. So hitting ^W on a path kills only last portion.
 WORDCHARS=${WORDCHARS//\/}
@@ -35,12 +44,10 @@ autoload -U colors && colors
 setopt promptsubst
 export PS1='%{$fg_bold[green]%}%c%{$reset_color%} %# '
 
-export PATH=$HOME/bin:$HOME/.cargo/bin:$HOME/.ghcup/bin:$PATH
+export GOPATH=$HOME/go
+export PATH=$HOME/bin:$GOPATH/bin:$PATH
 
-export PATH=$PATH:/usr/local/opt/riscv-gnu-toolchain/bin
-
-
-EDITOR=$(which vim)
+EDITOR=$(which nvim)
 VISUAL=$EDITOR
 FCEDIT=$EDITOR
 
