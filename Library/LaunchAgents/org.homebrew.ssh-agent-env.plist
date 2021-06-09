@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>org.homebrew.ssh-agent-env</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/sh</string>
+        <string>-c</string>
+        <string>while :; do launchctl setenv SSH_AUTH_SOCK $HOME/.ssh-agent.sock ; sleep 60 ; done</string>
+    </array>
+    <key>RunAtLoad</key><true/>
+    <key>EnableTransactions</key><true/>
+</dict>
+</plist>
