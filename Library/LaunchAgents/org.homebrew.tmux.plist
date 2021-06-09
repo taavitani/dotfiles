@@ -13,9 +13,10 @@
     <array>
         <string>/bin/sh</string>
         <string>-c</string>
-        <string>SSH_AUTH_SOCK=$HOME/.ssh-agent.sock tmux start \; new-session -s tty; detach</string>
+        <string>SSH_AUTH_SOCK=$HOME/.ssh-agent.sock tmux set-option -s exit-unattached off \; new-session -c $HOME -s tty -d; while :; do sleep 86400 ; done</string>
     </array>
     <key>RunAtLoad</key><true/>
-    <key>KeepAlive</key><true/>
+    <!-- <key>StandardErrorPath</key> -->
+    <!-- <string>/tmp/tmux.err</string> -->
 </dict>
 </plist>
