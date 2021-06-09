@@ -1,4 +1,6 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
+import:
+  - ~/.alacritty.local.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -280,10 +282,15 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux) user login shell
 #   - (Windows) powershell
+
+# Moved this to ~/.alacritty.local.yml. Path for the tmux binary differs on
+# Intel vs M1.
 #shell:
-#  program: /bin/bash
+#  program: /opt/homebrew/bin/tmux
 #  args:
-#    - --login
+#    - attach-session
+#    - -t
+#    - tty
 
 # Startup directory
 #
