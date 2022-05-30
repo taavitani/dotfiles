@@ -58,3 +58,5 @@ export FZF_DEFAULT_COMMAND=fd
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 export LANG=en_US.UTF-8
+
+alias gs='git switch -'
