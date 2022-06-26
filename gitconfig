@@ -4,3 +4,5 @@
 	defaultBranch = main
 [pull]
 	ff = only
+[gc]
+	reflogExpire = never
