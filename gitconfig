@@ -6,3 +6,5 @@
 	ff = only
 [gc]
 	reflogExpire = never
+[push]
+        autoSetupRemote = true
