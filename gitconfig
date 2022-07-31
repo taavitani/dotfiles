@@ -8,3 +8,7 @@
 	reflogExpire = never
 [push]
         autoSetupRemote = true
+[alias]
+	l = log
+[rebase]
+	autosquash = true
