@@ -9,6 +9,6 @@
 [push]
         autoSetupRemote = true
 [alias]
-	l = log
+	l = log --oneline --decorate -10
 [rebase]
 	autosquash = true
